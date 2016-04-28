@@ -22,3 +22,27 @@ CREATE TABLE comments(
   topic_id  INTEGER REFERENCES topics(id),
   user_id   INTEGER REFERENCES users(id)
 );
+
+INSERT INTO users
+  (username, password)
+
+VALUES
+( 'RobSmith', '12345');
+
+
+INSERT INTO topics
+  (name, description, user_id)
+
+VALUES
+( 'Cooking', 'Salads', 1),
+( 'Dancing', 'Salsa', 1);
+
+INSERT INTO comments
+  (text, votes, topic_id, user_id)
+
+VALUES
+( 'boiling', 3, 1, 1),
+( 'frying', 2, 1, 1),
+( 'ballet', 4, 2, 1),
+( 'salsa', -2, 2, 1);
+
