@@ -21,15 +21,22 @@ module FORUM_APP
 
       erb :topic
     end
-
     post '/topic' do
     #putting new topic into a database
+
       erb :topic
     end
 
     post '/comment' do
     #making comment on the same page
       erb :topic
+    end
+
+    post "/submit" do
+      @topic = params[:topic]
+
+      @comments = $db.exec("INSERT INTO topics VALUES(80,'UA502', 'Bananas', 1)")
+
     end
 
   end

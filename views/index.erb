@@ -7,14 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <h1> FORUM </h1>
 <h2> Topics </h2>
 
 <% @topics.each do |topic| %>
 
-<p>Name <%= topic["name"]%></p>
+<a>Name <%= topic["name"]%></a>
 <p>Description <%= topic["description"]%></p>
 
 <% end %>
+
+<form action="/submit" method="POST">
+
+<input type="text" name="topic[name]" placeholder="Author" /><br>
+
+<input type="text" name="topic[description]" placeholder="description" />
+
+<input type="submit" value="Submit" />
+
+</form>
+
 </body>
 </html>
