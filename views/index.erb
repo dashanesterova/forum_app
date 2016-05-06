@@ -8,25 +8,29 @@
 </head>
 <body>
 
-<h1> FORUM </h1>
+<center><h1> MY BEAUTIFUL APPLICATION </h1><center>
 <h2> Topics </h2>
 
 <% @topics.each do |topic| %>
 
-<a>Name <%= topic["name"]%></a>
+<a href="/topic/<%= topic['id']%>">Name <%= topic["name"]%></a>
 <p>Description <%= topic["description"]%></p>
 
 <% end %>
-
+<h1>Create new topic</h1>
 <form action="/submit" method="POST">
 
-<input type="text" name="topic[name]" placeholder="Author" /><br>
+<input type="text" name="topic[name]" placeholder="Title" /><br>
 
-<input type="text" name="topic[description]" placeholder="description" />
+<input type="text" name="topic[description]" placeholder="Description" />
 
 <input type="submit" value="Submit" />
 
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 </form>
+
+
 
 </body>
 </html>

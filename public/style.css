@@ -1,3 +1,27 @@
 body {
-  background-color: red;
+  background-color: lightblue;
 }
+
+p {
+    margin: 0 0 10px;
+}
+
+body {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    line-height: 35px;
+    background-image: url("http://wallpapercave.com/wp/qFnzHkS.jpg");
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.header {<br>
+      background-color: #fff;<br>
+      background-image: url(image.gif);<br>
+      background-repeat: no-repeat;<br>
+      background-position: top left; <br>
+    }
+
+
