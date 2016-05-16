@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS comments CASCADE;
 CREATE TABLE users(
   id        SERIAL PRIMARY KEY,
   username  VARCHAR NOT NULL,
+  email     VARCHAR NOT NULL,
   password  VARCHAR NOT NULL
 );
 
@@ -24,10 +25,10 @@ CREATE TABLE comments(
 );
 
 INSERT INTO users
-  (username, password)
+  (username, email, password)
 
 VALUES
-( 'RobSmith', '12345');
+( 'RobSmith', 'rob@smith.com', '12345');
 
 
 INSERT INTO topics

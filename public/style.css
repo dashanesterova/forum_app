@@ -1,6 +1,7 @@
 body {
   background-color: lightblue;
   font-color: blue;
+  font: center;
 }
 
 p {
@@ -12,6 +13,7 @@ body {
     font-size: 16px;
     line-height: 35px;
     background-image: url("http://wallpapercave.com/wp/qFnzHkS.jpg");
+    background-repeat: no-repeat;
 }
 
 h1 {

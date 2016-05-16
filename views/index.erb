@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
+  <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<center><h1> MY BEAUTIFUL APPLICATION </h1><center>
+<center><h1> Cooking </h1><center>
 <h2> Topics </h2>
 
 <% @topics.each do |topic| %>
@@ -20,7 +22,7 @@
 
 <h1>Create new topic</h1>
 
-<form action="/submit" method="POST">
+<form action="/topic_submit" method="POST">
 
 <input type="text" name="topic[name]" placeholder="Title" /><br>
 
@@ -28,11 +30,15 @@
 
 <input type="submit" value="Submit" />
 
-<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 
 </form>
 
+<a href = "/login">Login</a>
 
+<a href = "/">Signup</a>
+
+</div>
 
 </body>
 </html>
